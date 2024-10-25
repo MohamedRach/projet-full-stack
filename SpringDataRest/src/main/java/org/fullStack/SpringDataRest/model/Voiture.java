@@ -6,6 +6,7 @@ import lombok.*;
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Voiture {
@@ -26,7 +27,6 @@ public class Voiture {
     private int prix;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "proprietaire")
-    @NonNull
     private Proprietaire proprietaire;
 
     public Voiture(String toyota, String corolla, String grise, String s, int i, int i1, Proprietaire proprietaire) {
