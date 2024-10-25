@@ -25,3 +25,11 @@ mvn clean package
 cd ..
 docker-compose up --build
 ```
+## Monitoring and Metrics
+
+The application includes monitoring setup with Prometheus and Grafana:
+
+  - Prometheus collects application metrics exposed by the backend.
+  -  Grafana provides a visualization dashboard to monitor the application's performance.
+
+Access Grafana at: http://localhost:4000
