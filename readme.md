@@ -17,7 +17,7 @@ This is a full-stack application with a **Spring Boot** backend and a **React** 
 
 ### 1. Build the Backend JAR
 
-In order to package the backend application into a JAR file, navigate to the `backend` directory and run:
+In order to package the backend application into a JAR file, navigate to the backend directory `SpringDataRest` and run:
 
 ```bash
 cd SpringDataRest
