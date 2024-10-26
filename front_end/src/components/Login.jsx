@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -50,10 +50,12 @@ const Login = () => {
               required
             />
           </Form.Group>
-
-          <Button variant="primary" type="submit">
-            Login
-          </Button>
+          <div>
+            <Button variant="primary" type="submit">
+              Login
+            </Button>
+            <Link to={"/signup"}>Create Account</Link>
+          </div>
         </Form>
       </Card.Body>
     </Card>

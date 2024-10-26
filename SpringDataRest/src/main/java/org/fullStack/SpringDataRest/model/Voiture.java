@@ -26,7 +26,7 @@ public class Voiture {
     @NonNull
     private int prix;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "proprietaire")
+    @JoinColumn(name = "proprietaire_id")
     private Proprietaire proprietaire;
 
     public Voiture(String toyota, String corolla, String grise, String s, int i, int i1, Proprietaire proprietaire) {
