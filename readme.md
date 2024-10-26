@@ -17,7 +17,7 @@ This is a full-stack application with a **Spring Boot** backend and a **React** 
 
 ### 1. Build the Backend JAR
 
-In order to package the backend application into a JAR file, navigate to the `backend` directory and run:
+In order to package the backend application into a JAR file, navigate to the backend directory `SpringDataRest` and run:
 
 ```bash
 cd SpringDataRest
@@ -25,3 +25,11 @@ mvn clean package
 cd ..
 docker-compose up --build
 ```
+## Monitoring and Metrics
+
+The application includes monitoring setup with Prometheus and Grafana:
+
+  - Prometheus collects application metrics exposed by the backend.
+  -  Grafana provides a visualization dashboard to monitor the application's performance.
+
+Access Grafana at: http://localhost:4000
